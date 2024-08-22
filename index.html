@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Dinosaurio</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; margin: auto; background-color: #000; }
+        .boton {
+            position: absolute;
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: purple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 100;
+        }
+        #stop {
+            left: 45%;
+            top: 10%;
+        }
+        #play {
+            left: 55%;
+            top: 10%;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <button id="stop" class="boton">STOP</button>
+    <button id="play" class="boton">PLAY</button>
+    <script src="game.js"></script>
+</body>
+</html>
